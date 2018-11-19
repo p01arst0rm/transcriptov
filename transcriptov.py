@@ -19,7 +19,7 @@ warn_log_file = "./transcriptov.log"
 err_log_file = "./transcriptov.log"
 
 transcript_dir="transcripts/"
-tweet_state_size=5
+tweet_state_size=2
 
 
 
@@ -68,7 +68,8 @@ def send_tweet(tweet):
                 # print errors
                 for x in err_dict_list['errors']:
                         log_err(str("{} ({})").format(x['message'],x['code']))
-
+        except AttributeError:
+                log_err("invalid tweet. (lower tweet_state_size?)")
 
 
                        
