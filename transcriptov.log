@@ -1,0 +1,41 @@
+[ERROR] 170: Missing required parameter: status.
+[ERROR] 170: Missing required parameter: status.
+[ERROR][ERROR] 89: Invalid or expired token.
+[INFO] Loading api..
+[INFO] ..api loaded.
+[INFO] Sending tweet..
+[ERROR] 89: Invalid or expired token.
+[INFO] Loading api..
+[INFO] ..api loaded.
+[INFO] Sending tweet..
+[ERROR] Invalid or expired token. (89)
+[INFO]: Loading api..
+[INFO]: ..api loaded.
+[INFO]: Sending tweet..
+[ERROR]: Invalid or expired token. (89)
+[INFO]: fetching transcripts from "transcripts/"..
+[INFO]: [INFO] reading file "transcripts\test_1.txt"
+[INFO]: [INFO] reading file "transcripts\test_2.txt"
+[INFO]: [INFO] reading file "transcripts\test_3.txt"
+[INFO]: Loading api..
+[INFO]: ..api loaded.
+[INFO]: Sending tweet..
+[ERROR]: Invalid or expired token. (89)
+[INFO]: fetching transcripts from "transcripts/"..
+[INFO]: ..Done.
+[INFO]: reading file "transcripts\test_1.txt"
+[INFO]: reading file "transcripts\test_2.txt"
+[INFO]: reading file "transcripts\test_3.txt"
+[INFO]: Loading api..
+[INFO]: ..api loaded.
+[INFO]: Sending tweet..
+[ERROR]: Invalid or expired token. (89)
+[INFO]: fetching transcripts from "transcripts/"..
+[INFO]: ..Done.
+[INFO]: reading file "transcripts\test_1.txt"
+[INFO]: reading file "transcripts\test_2.txt"
+[INFO]: reading file "transcripts\test_3.txt"
+[INFO]: Loading api..
+[INFO]: ..api loaded.
+[INFO]: Sending tweet..
+[ERROR]: Invalid or expired token. (89)
