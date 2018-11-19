@@ -4,7 +4,7 @@ import glob
 import tweepy
 import ast
 
-# Twitter api keys
+# global variables
 #----------------------------------------------------------------------------
 api_key ="XXXX"
 api_key_secret = "XXXX"   
@@ -20,7 +20,7 @@ def log_err(err):
         with open(err_log_file, "a") as x:
             x.write(err + "\n")
             
-# Twitter defs
+# Twitter handler
 #----------------------------------------------------------------------------
 def get_api():
         print("[INFO] Loading api..")
