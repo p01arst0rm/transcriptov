@@ -92,7 +92,7 @@ class transcriptov:
                                 f_model = markovify.Text(f, state_size=self.tweet_state_size)
                                 model_list.append(f_model)
                         except:
-                                self.log_warn(str("couldnt generate text model for \"{}\".").format(f))
+                                self.log_warn(str("couldnt generate text model for \"{}\".").format(self.file_list[index]))
                         index+=1
 
                 # combine all of the input file text structures
