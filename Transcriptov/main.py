@@ -69,7 +69,7 @@ class transcriptov:
         def read_file(self, file_name):
                 self.log_notify("reading file \"{}\"".format(file_name))
                 try:
-                        with open(file_name, "r") as f:
+                        with open(file_name, "r", encoding="utf8") as f:
                                 f=f.read()
                                 return f
                 except FileNotFoundError:
