@@ -95,7 +95,7 @@ class transcriptov:
                 
                 
                 while len(model_list) > 1:
-                        model_list[0] = markovify.combine([ model_list[0], model_list.pop(1) ], [ 1.5, 1 ])
+                        model_list[0] = markovify.combine([ model_list[0], model_list.pop(1) ], [ 1, 1.5 ])
                 self.text_model = model_list[0]
 
 
