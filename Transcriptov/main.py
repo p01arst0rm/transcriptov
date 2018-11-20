@@ -74,7 +74,8 @@ class transcriptov:
                                 return f
                 except FileNotFoundError:
                         log_warn(str("cannot find file \"{}\"").format(file_name))
-
+                except UnicodeDecodeError:
+                        log_warn(str("file \"{}\" is not encoded with UTF-8, skipping.").format(file_name))
 
 
 
