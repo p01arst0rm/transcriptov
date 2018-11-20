@@ -9,6 +9,6 @@ setup(
     author_email='polar@ever3st.com',
     license='MIT',
     packages=['Transcriptov'],
-    install_requires=['tweepy>=3.6.0','markovify>=0.7.1', 'glob>=],
+    install_requires=['tweepy>=3.6.0','markovify>=0.7.1'],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     zip_safe=False)
