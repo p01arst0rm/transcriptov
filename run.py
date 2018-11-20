@@ -1,6 +1,9 @@
 import Transcriptov
 
 a = Transcriptov.transcriptov()
+
+a.get_api()
+
 a.transcript_dir="transcripts/"
 a.tweet_state_size=5
 
