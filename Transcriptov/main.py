@@ -73,9 +73,9 @@ class transcriptov:
                                 f=f.read()
                                 return f
                 except FileNotFoundError:
-                        log_warn(str("cannot find file \"{}\"").format(file_name))
+                        self.log_warn(str("cannot find file \"{}\"").format(file_name))
                 except UnicodeDecodeError:
-                        log_warn(str("file \"{}\" is not encoded with UTF-8, skipping.").format(file_name))
+                        self.log_warn(str("file \"{}\" is not encoded with UTF-8, skipping.").format(file_name))
 
 
 
@@ -88,8 +88,11 @@ class transcriptov:
                 # generate text models from input files
                 while index < num_elements:
                         f = self.read_file(self.file_list[index])
-                        f_model = markovify.Text(f, state_size=self.tweet_state_size)
-                        model_list.append(f_model)
+                        try:
+                                f_model = markovify.Text(f, state_size=self.tweet_state_size)
+                                model_list.append(f_model)
+                        except:
+                                self.log_warn(str("couldnt generate text model for \"{}\".").format(f))
                         index+=1
 
                 # combine all of the input file text structures
